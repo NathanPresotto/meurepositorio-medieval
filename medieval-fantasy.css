@@ -14,21 +14,33 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: transparent; /* Remover o fundo cinza */
   color: #fff;
   padding: 20px;
   text-align: center;
+  position: relative; /* Adicionar uma posição relativa para o elemento pai */
 }
 
 h1 {
   font-size: 48px;
   margin: 0;
   color: #fff;
+  position: relative; /* Adicionar uma posição relativa para o título */
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px; /* Ajustar a posição vertical do efeito de fogo */
+  left: 50%;
+  transform: translateX(-50%); /* Centralizar horizontalmente */
+  width: 100px;
+  height: 10px;
+  background-image: linear-gradient(to right, #ff0000, #ffd700); /* Efeito de fogo usando gradiente linear */
 }
 
 h2 {
   font-size: 32px;
-  color: #fff;
 }
 
 p {
