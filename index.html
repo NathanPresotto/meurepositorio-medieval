@@ -5,7 +5,34 @@
   <link rel="stylesheet" type="text/css" href="medieval-fantasy.css">
   <link rel="icon" type="image/png" href="favicon.png">
   <style>
-    /* Estilos personalizados aqui */
+    /* Estilos gerais */
+    body {
+      font-family: Arial, Ancient;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+    }
+
+    .magical-effect {
+      animation: magicalText 3s infinite;
+    }
+
+    @keyframes magicalText {
+      0% { color: #ffd700; }
+      50% { color: #ff4500; }
+      100% { color: #ffd700; }
+    }
 
     /* Estilos para o formulário do gerador de personagens */
     .character-generator {
@@ -34,6 +61,7 @@
       font-size: 18px;
     }
   </style>
+  <script src="script.js"></script>
 </head>
 <body>
   <header>
@@ -62,21 +90,4 @@
 
       <label for="race">Raça:</label>
       <select id="race">
-        <option value="humano">Humano</option>
-        <option value="fada">Fada</option>
-        <option value="elfo">Elfo</option>
-        <option value="elfo-negro">Elfo Negro</option>
-        <option value="dragao">Dragão</option>
-        <option value="demonio">Demônio</option>
-        <option value="demi-humano">Demi-Humano</option>
-        <option value="vampiro">Vampiro</option>
-      </select>
-
-      <label for="gender">Sexo:</label>
-      <select id="gender">
-        <option value="masculino">Masculino</option>
-        <option value="feminino">Feminino</option>
-        <option value="outro">Outro</option>
-      </select>
-
-      <button onclick="generateRandomCharacter()" class="magical-effect">Gerar Personagem</button
+        <option value="
