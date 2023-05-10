@@ -2,7 +2,7 @@ body {
   background-image: url('OldPaperImg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'Ancient', 'KingFont';
+  font-family: 'Ancient', 'KingFont', sans-serif;
   line-height: 1.5;
 }
 
@@ -14,29 +14,31 @@ body {
 }
 
 header {
-  background-color: transparent; /* Remover o fundo cinza */
+  background-color: transparent;
   color: #fff;
   padding: 20px;
   text-align: center;
-  position: relative; /* Adicionar uma posição relativa para o elemento pai */
+  position: relative;
 }
 
 h1 {
   font-size: 48px;
   margin: 0;
-  color: #000000	;
-  position: relative; /* Adicionar uma posição relativa para o título */
+  color: #000;
+  position: relative;
+  font-weight: normal; /* Reduzindo a negritude da fonte */
+  letter-spacing: 1px; /* Adicionando um leve espaçamento entre as letras */
 }
 
 h1::after {
   content: "";
   position: absolute;
-  bottom: -10px; /* Ajustar a posição vertical do efeito de fogo */
+  bottom: -4px; /* Ajustando a posição vertical do efeito de fogo */
   left: 50%;
-  transform: translateX(-50%); /* Centralizar horizontalmente */
+  transform: translateX(-50%);
   width: 100px;
-  height: 20px;
-  background-image: linear-gradient(to right, #ff0000, #ffd700); /* Efeito de fogo usando gradiente linear */
+  height: 4px;
+  background-image: linear-gradient(to right, #ff0000, #ffd700);
 }
 
 h2 {
@@ -79,5 +81,3 @@ footer {
   font-family: 'KingFont';
   src: url('fonts/KIN668.ttf') format('truetype');
 }
-
-/* Adicione mais declarações @font-face conforme necessário para outras fontes */
