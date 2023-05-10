@@ -69,3 +69,15 @@ footer {
   text-align: center;
   font-size: 14px;
 }
+
+@font-face {
+  font-family: 'BlackJaguarDemoRegular';
+  src: url('fonts/BlackJaguarDemoRegular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'KingFont';
+  src: url('fonts/KIN668.ttf') format('truetype');
+}
+
+/* Adicione mais declarações @font-face conforme necessário para outras fontes */
