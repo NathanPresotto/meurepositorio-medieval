@@ -5,7 +5,6 @@ body {
   background-color: #f7f3e9; /* Cor de papel antigo */
   font-family: 'Ancient', 'KingFont', sans-serif;
   line-height: 1.5;
-  transition: background-image 0.5s ease;
 }
 
 .container {
