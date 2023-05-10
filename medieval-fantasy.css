@@ -1,4 +1,7 @@
 body {
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #f7f3e9; /* Cor de papel antigo */
   font-family: 'Ancient', 'KingFont', sans-serif;
   line-height: 1.5;
@@ -117,6 +120,8 @@ footer {
     opacity: 0;
   }
   to {
+  
+  }
     opacity: 1;
   }
 }
