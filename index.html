@@ -61,7 +61,79 @@
       font-size: 18px;
     }
   </style>
-  <script src="script.js"></script>
+  
+  <script>
+  function generateRandomCharacter() {
+    var ageRange = document.getElementById('age-range').value;
+    var race = document.getElementById('race').value;
+    var gender = document.getElementById('gender').value;
+
+    var ageText = '';
+    var raceText = '';
+    var genderText = '';
+
+    switch (ageRange) {
+      case 'crianca':
+        ageText = 'Criança';
+        break;
+      case 'jovem':
+        ageText = 'Jovem';
+        break;
+      case 'adulto':
+        ageText = 'Adulto';
+        break;
+      case 'idoso':
+        ageText = 'Idoso';
+        break;
+    }
+
+    switch (race) {
+      case 'humano':
+        raceText = 'Humano';
+        break;
+      case 'fada':
+        raceText = 'Fada';
+        break;
+      case 'elfo':
+        raceText = 'Elfo';
+        break;
+      case 'elfo-negro':
+        raceText = 'Elfo Negro';
+        break;
+      case 'dragao':
+        raceText = 'Dragão';
+        break;
+      case 'demonio':
+        raceText = 'Demônio';
+        break;
+      case 'demi-humano':
+        raceText = 'Demi-Humano';
+        break;
+      case 'vampiro':
+        raceText = 'Vampiro';
+        break;
+    }
+
+    switch (gender) {
+      case 'masculino':
+        genderText = 'Masculino';
+        break;
+      case 'feminino':
+        genderText = 'Feminino';
+        break;
+      case 'outro':
+        genderText = 'Outro';
+        break;
+    }
+
+    var resultText = 'Personagem gerado:<br>' +
+      'Idade: ' + ageText + '<br>' +
+      'Raça: ' + raceText + '<br>' +
+      'Sexo: ' + genderText;
+
+    document.getElementById('character-result').innerHTML = resultText;
+  }
+  
 </head>
 <body>
   <header>
