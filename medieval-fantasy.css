@@ -2,7 +2,7 @@ body {
   background-image: url('OldPaperImg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'KingFont', 'Helvetica';
+  font-family: 'Ancient', 'KingFont';
   line-height: 1.5;
 }
 
@@ -71,8 +71,8 @@ footer {
 }
 
 @font-face {
-  font-family: 'BlackJaguarDemoRegular';
-  src: url('fonts/BlackJaguarDemoRegular.ttf') format('truetype');
+  font-family: 'Ancient';
+  src: url('fonts/Ancient Medium.ttf') format('truetype');
 }
 
 @font-face {
