@@ -1,3 +1,4 @@
+/* Estilos gerais */
 body {
   background-image: url('librarymagic.jpg');
   background-repeat: no-repeat;
@@ -7,6 +8,8 @@ body {
   line-height: 1.5;
   transition: background-image 0.5s ease;
   color: #000000; /* Letras pretas */
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -104,25 +107,6 @@ footer {
   font-size: 14px;
   opacity: 0;
   animation: fade-in 1s forwards;
-}
-
-/* Estilos gerais */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-  margin: 0;
-  padding: 0;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-h1, h2, h3 {
-  text-align: center;
 }
 
 .magical-effect {
