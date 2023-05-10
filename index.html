@@ -5,9 +5,11 @@
   <link rel="stylesheet" type="text/css" href="medieval-fantasy.css">
   <link rel="icon" type="image/png" href="favicon.png">
   <style>
+    /* Estilos personalizados aqui */
+
     /* Estilos gerais */
     body {
-      font-family: Arial, Ancient;
+      font-family: Arial, sans-serif;
       background-color: #f9f9f9;
       color: #333;
       margin: 0;
@@ -61,79 +63,6 @@
       font-size: 18px;
     }
   </style>
-  
-  <script>
-  function generateRandomCharacter() {
-    var ageRange = document.getElementById('age-range').value;
-    var race = document.getElementById('race').value;
-    var gender = document.getElementById('gender').value;
-
-    var ageText = '';
-    var raceText = '';
-    var genderText = '';
-
-    switch (ageRange) {
-      case 'crianca':
-        ageText = 'Criança';
-        break;
-      case 'jovem':
-        ageText = 'Jovem';
-        break;
-      case 'adulto':
-        ageText = 'Adulto';
-        break;
-      case 'idoso':
-        ageText = 'Idoso';
-        break;
-    }
-
-    switch (race) {
-      case 'humano':
-        raceText = 'Humano';
-        break;
-      case 'fada':
-        raceText = 'Fada';
-        break;
-      case 'elfo':
-        raceText = 'Elfo';
-        break;
-      case 'elfo-negro':
-        raceText = 'Elfo Negro';
-        break;
-      case 'dragao':
-        raceText = 'Dragão';
-        break;
-      case 'demonio':
-        raceText = 'Demônio';
-        break;
-      case 'demi-humano':
-        raceText = 'Demi-Humano';
-        break;
-      case 'vampiro':
-        raceText = 'Vampiro';
-        break;
-    }
-
-    switch (gender) {
-      case 'masculino':
-        genderText = 'Masculino';
-        break;
-      case 'feminino':
-        genderText = 'Feminino';
-        break;
-      case 'outro':
-        genderText = 'Outro';
-        break;
-    }
-
-    var resultText = 'Personagem gerado:<br>' +
-      'Idade: ' + ageText + '<br>' +
-      'Raça: ' + raceText + '<br>' +
-      'Sexo: ' + genderText;
-
-    document.getElementById('character-result').innerHTML = resultText;
-  }
-  
 </head>
 <body>
   <header>
@@ -162,4 +91,30 @@
 
       <label for="race">Raça:</label>
       <select id="race">
-        <option value="
+        <option value="humano">Humano</option>
+        <option value="fada">Fada</option>
+        <option value="elfo">Elfo</option
+        <option value="elfo-negro">Elfo Negro</option>
+        <option value="dragao">Dragão</option>
+        <option value="demonio">Demônio</option>
+        <option value="demi-humano">Demi-Humano</option>
+        <option value="vampiro">Vampiro</option>
+      </select>
+
+      <label for="gender">Gênero:</label>
+      <select id="gender">
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+        <option value="outro">Outro</option>
+      </select>
+
+      <button onclick="gerarPersonagem()">Gerar Personagem</button>
+    </div>
+
+    <div class="character-result" id="character-result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
