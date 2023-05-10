@@ -34,7 +34,63 @@
       font-size: 18px;
     }
   </style>
-</head>
+</head> 
+  /* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+.magical-effect {
+  animation: magicalText 3s infinite;
+}
+
+@keyframes magicalText {
+  0% { color: #ffd700; }
+  50% { color: #ff4500; }
+  100% { color: #ffd700; }
+}
+
+/* Estilos para o formulário do gerador de personagens */
+.character-generator {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.character-generator select,
+.character-generator button {
+  margin: 10px;
+}
+
+.character-generator button {
+  padding: 8px 16px;
+  background-color: #ffd700;
+  color: #333;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos para exibir o resultado do personagem */
+.character-result {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
 <body>
   <header>
     <h1 class="magical-effect">Meu Repositório Medieval</h1>
