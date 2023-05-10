@@ -94,7 +94,7 @@ a:hover::before {
 }
 
 footer {
-  background-color: #fff; /* transparente */
+  background-color: transparent;
   color: #fff;
   padding: 10px;
   text-align: center;
