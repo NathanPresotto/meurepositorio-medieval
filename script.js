@@ -1,50 +1,87 @@
-// Função para gerar um número aleatório dentro de uma faixa
-function getRandomNumber(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+<script>
+  function gerarPersonagem() {
+    var ageRange = document.getElementById('age-range').value;
+    var race = document.getElementById('race').value;
+    var gender = document.getElementById('gender').value;
 
-// Função para gerar um nome aleatório
-function generateRandomName(names) {
-  return names[Math.floor(Math.random() * names.length)];
-}
+    var ageText = '';
+    var raceText = '';
+    var genderText = '';
 
-// Função para gerar a descrição da personalidade
-function generatePersonalityDescription() {
-  var personalities = [
-    "Corajoso e destemido, sempre pronto para enfrentar qualquer desafio.",
-    "Sábio e perspicaz, capaz de encontrar soluções para os problemas mais complexos.",
-    "Leal e honrado, sempre disposto a ajudar seus amigos e proteger os mais fracos.",
-    "Misterioso e enigmático, guarda segredos antigos e poderosos.",
-    "Astuto e trapaceiro, sempre buscando uma vantagem pessoal.",
-    "Justo e compassivo, luta pelos oprimidos e pelos ideais de justiça.",
-    "Ambicioso e sedento de poder, disposto a fazer qualquer coisa para alcançar seus objetivos.",
-    "Sonhador e idealista, acredita em um mundo melhor e luta por suas convicções.",
-    "Feroz e implacável, uma força da natureza que destrói tudo em seu caminho.",
-    "Calmo e pacífico, busca a harmonia e a paz em todas as situações."
-  ];
+    switch (ageRange) {
+      case 'crianca':
+        ageText = 'Criança';
+        break;
+      case 'jovem':
+        ageText = 'Jovem';
+        break;
+      case 'adulto':
+        ageText = 'Adulto';
+        break;
+      case 'idoso':
+        ageText = 'Idoso';
+        break;
+    }
 
-  return personalities[Math.floor(Math.random() * personalities.length)];
-}
+    switch (race) {
+      case 'humano':
+        raceText = 'Humano';
+        break;
+      case 'fada':
+        raceText = 'Fada';
+        break;
+      case 'elfo':
+        raceText = 'Elfo';
+        break;
+      case 'elfo-negro':
+        raceText = 'Elfo Negro';
+        break;
+      case 'dragao':
+        raceText = 'Dragão';
+        break;
+      case 'demonio':
+        raceText = 'Demônio';
+        break;
+      case 'demi-humano':
+        raceText = 'Demi-Humano';
+        break;
+      case 'vampiro':
+        raceText = 'Vampiro';
+        break;
+    }
 
-// Função para gerar a descrição da aparência
-function generateAppearanceDescription(race) {
-  var descriptions = {
-    "Humano": "Um humano comum, de estatura mediana e características comuns.",
-    "Fada": "Uma criatura etérea com asas translúcidas e brilhantes.",
-    "Elfo": "Um ser elegante e esguio, com orelhas pontudas e longos cabelos dourados.",
-    "Elfo Negro": "Um elfo sombrio, de pele pálida e olhos brilhantes vermelhos.",
-    "Dragão": "Uma poderosa criatura escamosa, com asas majestosas e dentes afiados.",
-    "Demônio": "Uma entidade demoníaca, com chifres, asas e olhos ardentes.",
-    "Demi-Humano": "Uma mistura de humano com outra raça, exibindo características únicas.",
-    "Vampiro": "Um ser pálido e elegante, com presas afiadas e olhos hipnotizantes."
-  };
+    switch (gender) {
+      case 'masculino':
+        genderText = 'Masculino';
+        break;
+      case 'feminino':
+        genderText = 'Feminino';
+        break;
+      case 'outro':
+        genderText = 'Outro';
+        break;
+    }
 
-  return descriptions[race];
-}
+    var characterDescription = '';
 
-// Função para gerar um personagem aleatório
-function generateRandomCharacter() {
-  var races = ["Humano", "Fada", "Elfo", "Elfo Negro", "Dragão", "Demônio", "Demi-Humano", "Vampiro"];
-  var ages = ["Criança", "Jovem", "Adulto", "Idoso"];
+    // Gerar descrição do personagem com base nas escolhas
+    if (race === 'humano') {
+      characterDescription = 'Um humano ' + ageText.toLowerCase() + ' de sexo ' + genderText.toLowerCase() + '.';
+    } else if (race === 'fada') {
+      characterDescription = 'Uma fada ' + ageText.toLowerCase() + ' de sexo ' + genderText.toLowerCase() + '.';
+    } else if (race === 'elfo') {
+      characterDescription = 'Um elfo ' + ageText.toLowerCase() + ' de sexo ' + genderText.toLowerCase() + '.';
+    } else if (race === 'elfo-negro') {
+      characterDescription = 'Um elfo negro ' + ageText.toLowerCase() + ' de sexo ' + genderText.toLowerCase() + '.';
+    } else if (race === 'dragao') {
+      characterDescription = 'Um dragão ' + ageText.toLowerCase() + ' de sexo ' + genderText.toLowerCase() + '.';
+    } else if (race === 'demonio') {
+      characterDescription = 'Um demônio ' + ageText.toLowerCase() + ' de sexo ' + genderText.toLowerCase() + '.';
+    } else if (race === 'demi-humano') {
+      characterDescription = 'Um demi-humano ' + ageText.toLowerCase() + ' de sexo ' + genderText.toLowerCase() + '.';
+    } else if (race === 'vampiro') {
+      characterDescription = 'Um vampiro ' + ageText.toLowerCase() + ' de sexo ' + genderText.toLowerCase() + '.';
+    }
 
-  var race = generateRandom
+    // Exibir o resultado do personagem
+    document.getElementById('character-result').innerHTML = character
