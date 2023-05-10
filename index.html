@@ -5,7 +5,26 @@
   <link rel="stylesheet" type="text/css" href="medieval-fantasy.css">
   <link rel="icon" type="image/png" href="favicon.png">
   <style>
-    /* Adicione estilos personalizados aqui, como animações e efeitos de magia */
+    body {
+      background-image: url('background.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    .magical-effect {
+      animation: magical-fade-in 1s forwards;
+    }
+    
+    @keyframes magical-fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
 </head>
 <body>
