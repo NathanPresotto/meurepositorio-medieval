@@ -1,7 +1,5 @@
 body {
-  background-image: url('OldPaperImg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #f7f3e9; /* Cor de papel antigo */
   font-family: 'Ancient', 'KingFont', sans-serif;
   line-height: 1.5;
   transition: background-image 0.5s ease;
@@ -35,6 +33,7 @@ h1 {
   letter-spacing: 1px;
   opacity: 0;
   animation: fade-in 1s forwards;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Sombra nas letras */
 }
 
 h1::after {
@@ -121,3 +120,6 @@ footer {
     opacity: 1;
   }
 }
+
+@keyframes magic-glow {
+  0%
