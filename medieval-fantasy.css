@@ -1,10 +1,12 @@
 body {
-  background-image: url('OldPaperImg.jpg');
+  background-image: url('librarymagic.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #f7f3e9; /* Cor de papel antigo */
+  background-color: #f7f3e9; /* Fundo de papel antigo */
   font-family: 'Ancient', 'KingFont', sans-serif;
   line-height: 1.5;
+  transition: background-image 0.5s ease;
+  color: #000000; /* Letras pretas */
 }
 
 .container {
@@ -18,7 +20,7 @@ body {
 
 header {
   background-color: transparent;
-  color: #fff;
+  color: #000000; /* Letras pretas */
   padding: 20px;
   text-align: center;
   position: relative;
@@ -27,15 +29,15 @@ header {
 }
 
 h1 {
-  font-size: 64px; /* Aumentar o tamanho da fonte */
+  font-size: 64px;
   margin: 0;
-  color: #000;
+  color: #000000; /* Letras pretas */
   position: relative;
   font-weight: normal;
   letter-spacing: 1px;
   opacity: 0;
   animation: fade-in 1s forwards;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Sombra nas letras */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
 h1::after {
@@ -50,7 +52,7 @@ h1::after {
 }
 
 h2 {
-  font-size: 48px; /* Aumentar o tamanho da fonte */
+  font-size: 48px;
   font-weight: normal;
   letter-spacing: 1px;
   opacity: 0;
@@ -71,7 +73,7 @@ ul {
 }
 
 a {
-  color: #333;
+  color: #000000; /* Letras pretas */
   text-decoration: none;
   transition: color 0.3s ease;
   position: relative;
@@ -96,34 +98,10 @@ a:hover::before {
 
 footer {
   background-color: transparent;
-  color: #00000;
+  color: #000000; /* Letras pretas */
   padding: 10px;
   text-align: center;
   font-size: 14px;
   opacity: 0;
   animation: fade-in 1s forwards;
 }
-
-@font-face {
-  font-family: 'Ancient';
-  src: url('fonts/Ancient Medium.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'KingFont';
-  src: url('fonts/KIN668.ttf') format('truetype');
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-  
-  }
-    opacity: 1;
-  }
-}
-
-@keyframes magic-glow {
-  0%
