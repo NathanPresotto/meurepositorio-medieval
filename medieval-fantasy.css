@@ -43,6 +43,7 @@ h1::after {
 
 h2 {
   font-size: 32px;
+  font-weight: normal; /* Remover o negrito */
 }
 
 p {
