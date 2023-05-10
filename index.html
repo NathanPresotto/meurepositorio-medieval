@@ -63,6 +63,154 @@
       font-size: 18px;
     }
   </style>
+  /* Estilos gerais */
+body {
+  background-image: url('librarymagic.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f7f3e9; /* Fundo de papel antigo */
+  font-family: 'Ancient', 'KingFont', sans-serif;
+  line-height: 1.5;
+  transition: background-image 0.5s ease;
+  color: #000000; /* Letras pretas */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-attachment: scroll;
+}
+
+header {
+  background-color: transparent;
+  color: #000000; /* Letras pretas */
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  opacity: 0;
+  animation: fade-in 1s forwards;
+}
+
+h1 {
+  font-size: 64px;
+  margin: 0;
+  color: #000000; /* Letras pretas */
+  position: relative;
+  font-weight: normal;
+  letter-spacing: 1px;
+  opacity: 0;
+  animation: fade-in 1s forwards;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background-image: linear-gradient(to right, #ff0000, #ffd700);
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  opacity: 0;
+  animation: fade-in 1s forwards;
+}
+
+p {
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: fade-in 1s forwards;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  opacity: 0;
+  animation: fade-in 1s forwards;
+}
+
+a {
+  color: #000000; /* Letras pretas */
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffd700;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+a:hover::before {
+  transform: scaleX(1);
+}
+
+footer {
+  background-color: transparent;
+  color: #000000; /* Letras pretas */
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0;
+  animation: fade-in 1s forwards;
+}
+
+.magical-effect {
+  animation: magicalText 3s infinite;
+}
+
+@keyframes magicalText {
+  0% { color: #ffd700; }
+  50% { color: #ff4500; }
+  100% { color: #ffd700; }
+}
+
+/* Estilos para o formulário do gerador de personagens */
+.character-generator {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.character-generator select,
+.character-generator button {
+  margin: 10px;
+}
+
+.character-generator button {
+  padding: 8px 16px;
+  background-color: #ffd700;
+  color: #333;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos para exibir o resultado do personagem */
+.character-result {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+  <style>
+}
 </head>
 <body>
   <header>
